@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 class="title">Invoice Generator</h1>
+    <h4 class="text">Thanks for choosing GoodCorp, LLC!</h4>
+</header>
+<main>
+    <div class="container">
+        <div class="product-list">
+            <button class="add-product" data-product="Wash Car" data-price="10">Wash Car: $10</button>
+            <button class="add-product" data-product="Mow Lawn" data-price="20">Mow Lawn: $20</button>
+            <button class="add-product" data-product="Pull Weeds" data-price="30">Pull Weeds: $30</button>
+        </div>
+        <div class="invoice">
+            <h3>Task</h3>
+            <ul id="invoice-items"></ul>
+            <hr>
+            <h3>Total Amount: </h3>
+            <div id="total">$0</div>
+        </div>
+        <div class="send-button-container">
+            <button class="send-button" onclick="send()">Send invoice</button>
+        </div>
+    </div>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
